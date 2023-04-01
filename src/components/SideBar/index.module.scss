@@ -1,0 +1,11 @@
+.navigation {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.link {
+  text-decoration: none;
+}
