@@ -1,16 +1,14 @@
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 0 100px 0 50px;
+  height: 50px;
 }
 
 .smallContainer {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-}
-
-.user {
-  margin-left: 40px;
-  margin-right: 100px;
 }/*# sourceMappingURL=index.module.css.map */

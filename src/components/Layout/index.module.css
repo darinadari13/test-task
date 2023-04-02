@@ -1,4 +1,11 @@
 .container {
-  max-width: 100%;
-  padding: 20px;
+  position: relative;
+}
+
+.absoluteElements {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }/*# sourceMappingURL=index.module.css.map */

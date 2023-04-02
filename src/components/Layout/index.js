@@ -7,9 +7,11 @@ import styles from './index.module.scss'
 function Layout () {
   return (
     <div className={styles.container}>
+      <div className={styles.absoluteElements}>
+        <Header/>
+        <SideBar/>
+      </div>
       <Outlet/>
-      <Header/>
-      <SideBar/>
       <Footer/>
     </div>
   );
