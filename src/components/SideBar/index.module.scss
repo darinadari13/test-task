@@ -3,7 +3,6 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
   row-gap: 25px;
   width: $sidebarWidth;
   max-width: $sidebarWidth;
@@ -31,6 +30,10 @@
   text-decoration: none;
   padding-left: 40px;
   position: relative;
+
+  &:first-of-type {
+    padding-top: 60px;
+  }
 }
 
 .linkActive {

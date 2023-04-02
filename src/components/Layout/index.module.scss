@@ -1,11 +1,20 @@
+@import "../../variables.scss";
+
 .container {
   position: relative;
 }
 
-.absoluteElements {
+.headerContainer {
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
+  z-index: 1;
+}
+
+.sidebarContainer {
+  position: absolute;
+  top: $headerHeight;
   left: 0;
   z-index: 1;
 }

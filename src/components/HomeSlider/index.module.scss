@@ -1,5 +1,9 @@
 @import "../../variables.scss";
 
+.root {
+  position: relative;
+}
+
 .slide {
   height: 100vh;
   position: relative;
@@ -26,4 +30,55 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.controls {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.controlsButtons {
+  padding-left: calc($sidebarWidth + 50px);
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  &::after {
+    content: '';
+    background-color: white;
+    margin-left: 10px;
+    height: 2px;
+    width: 100%;
+  }
+}
+
+.controlsPlaceholder {
+  flex-shrink: 0;
+}
+
+.arrowButton {
+  margin-right: 10px;
+}
+
+.controlsArrow {
+  color: black;
+}
+
+.controlsIndicator {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  
+
+  &::after {
+    content: '';
+    background-color: white;
+    padding-left: 100px;
+    height: 2px;
+  }
 }
