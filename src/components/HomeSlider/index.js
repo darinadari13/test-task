@@ -1,4 +1,5 @@
 import { HOME_SLIDER_DATA } from '../../data/const';
+import { Link } from 'react-router-dom';
 import { Carousel, Button } from 'antd';
 import styles from './index.module.scss'
 import React, { useState, useRef } from "react";
@@ -31,7 +32,7 @@ function HomeSlider() {
               <div className={styles.slideInfo}>
                 <h1 className={styles.slideTitle}>{title}</h1>
                 <p>{description}</p>
-                <Button type="primary" shape="round" className={styles.contentButton}>{link}</Button>
+                <Link className={styles.link} to={link}>Read more</Link>
               </div>
             </div>
             <div className={styles.slideBackground} style={{ backgroundImage: `url(${image})` }} />

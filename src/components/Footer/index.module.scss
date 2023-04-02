@@ -1,7 +1,9 @@
+@import "../../variables.scss";
+
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 40px $contentRightPad 40px 40px;
   background-color: aquamarine;
 }
 

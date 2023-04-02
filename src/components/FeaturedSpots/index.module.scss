@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.root {
+  display: flex;
+  color: white;
+  column-gap: 100px;
+}
+
+.viewAll {
+  display: block;
+  width: 80px;
+  margin-top: 80px;
+  margin-left: 90px;
+  position: relative;
+  color: white;
+
+  &::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    height: 2px;
+    left: -50px;
+    top: 70%;
+    width: 80%;
+  }
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: $sidebarWidth;
+  margin-top: 50px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-right: $contentRightPad;
+  margin-top: 100px;
+}
+
+.spot {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
