@@ -9,14 +9,17 @@ function HomeSlider() {
     console.log(currentSlide);
   };
 
-  console.log(HOME_SLIDER_DATA);
   return (
     <Carousel afterChange={onChange}>
       {HOME_SLIDER_DATA.map(({ id, title, description, link, image }) => (
         <div key={id} className={styles.slide}>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <Button type="primary" shape="round">{link}</Button>
+          <div className={styles.slideContent}>
+            <div className={styles.slideInfo}>
+              <h1>{title}</h1>
+              <p>{description}</p>
+              <Button type="primary" shape="round">{link}</Button>
+            </div>
+          </div>
           <div className={styles.slideBackground} style={{ backgroundImage: `url(${image})` }} />
         </div>
       )

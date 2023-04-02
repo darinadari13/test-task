@@ -4,7 +4,7 @@
   flex-direction: column;
   row-gap: 25px;
   width: 300px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
   position: relative;
 }
 .navigation:after {
