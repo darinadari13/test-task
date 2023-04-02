@@ -6,9 +6,11 @@ function FeaturedSpots() {
   return (
     <div className={styles.root}>
       <div className={styles.leftContainer}>
-        <h2>Featured Spots</h2>
-        <span>Some of featured spot that ypumight want visit before you die</span>
-        <span className={styles.viewAll}>View All</span>
+        <div className={styles.leftContainerText}>
+          <h2>Featured Spots</h2>
+          <span>Some of featured spot that ypumight want visit before you die</span>
+          <Link className={styles.viewAll}>View All</Link>
+        </div>
       </div>
       <div className={styles.rightContainer}>
         {FEATURED_SPOTS_DATA.map(({id, title, place, description, link, image}) => (

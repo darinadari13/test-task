@@ -2,7 +2,7 @@ export const HOME_PATH = '/';
 export const RECOMENDATION_PATH = '/recomendation';
 export const EXPLORE_PATH = '/explore';
 export const HELP_PATH = '/help';
-export const ABOUT_US_PATH ='/about us';
+export const ABOUT_US_PATH ='/about-us';
 
 export const APP_SECTIONS = [
   {
