@@ -2,10 +2,11 @@
 
 .navigation {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  padding-top: 60px;
   row-gap: 25px;
   width: $sidebarWidth;
+  max-width: $sidebarWidth;
   height: calc(100vh - $headerHeight);
   position: relative;
 
@@ -24,5 +25,26 @@
 
 .link {
   color: white;
+  opacity: 0.5;
+  font-size: 20px;
+  font-weight: 700;
   text-decoration: none;
+  padding-left: 40px;
+  position: relative;
+}
+
+.linkActive {
+  @extend .link;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+
+  &:after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    right: 0;
+    height: 2px;
+    width: 20%;
+  }
 }
