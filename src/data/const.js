@@ -62,7 +62,7 @@ export const HOME_SLIDER_DATA = [
     title: 'Nature theme',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     link: 'Read more',
-    image: 'https://picsum.photos/seed/nature/1200/800',
+    image: 'https://picsum.photos/seed/waterfall/1200/800',
     placeholder: 'Outdoors Edition 4'
   }
 ];

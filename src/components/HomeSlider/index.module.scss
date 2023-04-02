@@ -55,7 +55,7 @@ $slideContentLeftPadding: calc($sidebarWidth + 90px);
 .controls {
   box-sizing: border-box;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   padding-left: $slideContentLeftPadding;
   width: 100%;
   display: flex;
