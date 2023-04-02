@@ -29,9 +29,9 @@ function HomeSlider() {
           <div key={id} className={styles.slide}>
             <div className={styles.slideContent}>
               <div className={styles.slideInfo}>
-                <h1>{title}</h1>
+                <h1 className={styles.slideTitle}>{title}</h1>
                 <p>{description}</p>
-                <Button type="primary" shape="round">{link}</Button>
+                <Button type="primary" shape="round" className={styles.contentButton}>{link}</Button>
               </div>
             </div>
             <div className={styles.slideBackground} style={{ backgroundImage: `url(${image})` }} />

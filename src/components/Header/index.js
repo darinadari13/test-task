@@ -8,7 +8,9 @@ function Header() {
       </div>
       <div className={styles.smallContainer}> 
         <span>My Collection</span>
-        <span className={styles.user}>James Bond</span>
+        <span>|</span>
+        <span>James Bond</span>
+        <img className={styles.avatar} alt="avatar" src="https://picsum.photos/40" />
       </div>
     </header>
   )

@@ -9,16 +9,29 @@
   position: relative;
 }
 
+.contentButton {
+  background: #d2d200;
+  border-color: #d2d200;
+  color: black;
+  margin-top: 20px;
+}
+
 .slideContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  padding-left: calc($sidebarWidth + 50px);
+  height: 80%;
+  padding-left: calc($sidebarWidth + 90px);
+}
+
+.slideTitle {
+  font-size: 45px;
 }
 
 .slideInfo {
   width: 33%;
+  color: white;
+  font-weight: 500;
 }
 
 .slideBackground {
@@ -51,6 +64,7 @@
   &::after {
     content: '';
     background-color: white;
+    opacity: .5;
     margin-left: 10px;
     height: 2px;
     width: 100%;
@@ -73,12 +87,15 @@
   display: flex;
   align-items: center;
   padding-left: 30px;
-  
+
 
   &::after {
     content: '';
     background-color: white;
-    padding-left: 100px;
+    opacity: .5;
+    width: 60px;
     height: 2px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }

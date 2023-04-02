@@ -25,5 +25,13 @@
 .smallContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.avatar {
+  border-radius: 20px;
 }
