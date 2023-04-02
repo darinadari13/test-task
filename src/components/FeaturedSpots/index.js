@@ -13,15 +13,18 @@ function FeaturedSpots() {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        {FEATURED_SPOTS_DATA.map(({id, title, place, description, link, image}) => (
-          <div key={id} className={styles.spot}>
-            <img className={styles.img} src={image} alt="spot"/>
-            <h2>{title}</h2>
-            <span>{place}</span>
-            <span>{description}</span>
-            <Link to={link}>Read more</Link>
-          </div>
-        ))}
+        <div className={styles.spotsList}>
+          {FEATURED_SPOTS_DATA.map(({id, title, place, description, link, image, placeholder}) => (
+            <div key={id} className={styles.spot}>
+              <img className={styles.img} src={image} alt="spot"/>
+              <h2 className={styles.title}>{title}</h2>
+              <span className={styles.place}>{place}</span>
+              <span>{description}</span>
+              <Link to={link} className={styles.readMore}>read more</Link>
+            </div>
+          ))}
+        </div>
+        <div className={styles.outdoors}>Outdoors Edition</div>
       </div>
     </div>
   )

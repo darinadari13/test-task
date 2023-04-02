@@ -53,15 +53,50 @@
 }
 
 .rightContainer {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
   padding-right: $contentRightPad;
   margin-top: 100px;
+}
+
+.spotsList {
+  display: flex;
+  justify-content: space-between;
 }
 
 .spot {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+
+.place {
+  opacity: .5;
+  margin-bottom: 20px
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.readMore {
+  color: $yellowMainColor;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.outdoors {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    opacity: .5;
+    width: 85%;
+    margin-left: 150px;
+    margin-right: $contentRightPad;
+  }
 }

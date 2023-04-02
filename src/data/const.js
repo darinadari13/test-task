@@ -75,7 +75,6 @@ export const FEATURED_SPOTS_DATA = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     link: 'Read more',
     image: 'https://picsum.photos/seed/lake1/300',
-    placeholder: 'Outdoors Edition'
   },
   {
     id: 1,
@@ -84,7 +83,6 @@ export const FEATURED_SPOTS_DATA = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     link: 'Read more',
     image: 'https://picsum.photos/seed/rain1/300',
-    placeholder: 'Outdoors Edition'
   },
   {
     id: 2,
@@ -93,7 +91,6 @@ export const FEATURED_SPOTS_DATA = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     link: 'Read more',
     image: 'https://picsum.photos/seed/mountain1/300',
-    placeholder: 'Outdoors Edition'
   },
 ]
 
