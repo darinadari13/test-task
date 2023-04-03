@@ -180,6 +180,9 @@ export const EDITOR_PICK_DATA = [
       place: 'USA',
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
     },
+  ],
+
+  [
     {
       id: 10,
       image: 'https://picsum.photos/seed/tower10/300',
@@ -187,9 +190,6 @@ export const EDITOR_PICK_DATA = [
       place: 'USA',
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
     },
-  ],
-
-  [
     {
       id: 11,
       image: 'https://picsum.photos/seed/tower11/300',

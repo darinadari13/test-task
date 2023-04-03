@@ -24,14 +24,29 @@ function EditorPick() {
     ref.current.prev()
   };
 
+  const renderGridSlide = (items, index) => {
+    return (
+      <div>
+        <div key={index} className={styles.gridSlide}>
+          <div className={styles.gridSlideImage1} style={{ backgroundImage: `url(${items[0].image})`}} />
+          <div className={styles.gridSlideImage2} style={{ backgroundImage: `url(${items[1].image})`}} />
+          <div className={styles.gridSlideImage3} style={{ backgroundImage: `url(${items[2].image})`}} />
+          <div className={styles.gridSlideImage4} style={{ backgroundImage: `url(${items[3].image})`}} />
+          <div className={styles.gridSlideImage5} style={{ backgroundImage: `url(${items[4].image})`}} />
+        </div>
+      </div>
+    )
+  }
 
   return (
     <section className={styles.root}>
-      <div className={styles.textContainer}>
-        <span className={styles.header}>Editor's Pick</span><br />
-        <span className={styles.text}>Our picks, just for you nam an vidisse admodum omittantur nihil corrumpit</span>
+      <div className={styles.leftContainer}>
+        <div className={styles.leftContainerText}>
+          <h2>Editor's Pick</h2>
+          <span>Our picks, just for you nam an vidisse admodum omittantur nihil corrumpit</span>
+        </div>
       </div>
-      <div className={styles.sliderContainer}>
+      <div className={styles.rightContainer}>
         <div className={styles.sliderIndicators}>
           <div className={styles.buttonsContainer}>
             <Button
@@ -49,17 +64,11 @@ function EditorPick() {
           </div>
           <span className={styles.controlsIndicator}>{activeSlideIndex + 1}/{EDITOR_PICK_DATA.length}</span>
         </div>
-        <Carousel ref={ref} dots={false} slidesToShow={5} slidesToScroll={5} afterChange={onChange}>
-            {EDITOR_PICK_DATA.map(subArray => subArray.map(({id, image, title, place, description}) => (
-              <div className={styles.slide} key={id}>
-                <Popover content={<div><span>{title}</span><span>{place}</span><span>{description}</span></div>} placement="bottom"
-                overlayClassName={styles.popover}>
-                  <img className={styles.img} src={image} alt="tower"/>
-                </Popover>
-              </div>
-            )
-            ))}
+        <div>
+        <Carousel ref={ref} dots={false} afterChange={onChange}>
+          {EDITOR_PICK_DATA.map(renderGridSlide)}
         </Carousel>
+        </div>
       </div>
     </section>
   )
