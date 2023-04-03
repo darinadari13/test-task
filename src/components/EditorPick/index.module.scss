@@ -1,13 +1,45 @@
+@import "../../variables.scss";
+
 .root {
   display: flex;
   flex-direction: row;
-  row-gap: 100px;
+  gap: 100px;
 }
 
 .textContainer {
   width: 10%;
+  margin-left: $contentRightPad;
+  color: $mainTextColor;
+}
+
+.header {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  width: 20px;
 }
 
 .sliderContainer {
   width: 50%;
 }
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  &::after {
+    content: '';
+    background-color: white;
+    opacity: .5;
+    margin-left: 10px;
+    height: 2px;
+    width: 100%;
+  }
+}
+
+.sliderIndicators {
+  display: flex;
+  margin-bottom: 40px;
+}
+

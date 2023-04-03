@@ -27,34 +27,38 @@ function EditorPick() {
 
   return (
     <section className={styles.root}>
-      <div lassName={styles.textContainer}>
-        <span>Editor's Pick</span>
-        <span>Our picks, just for you nam an vidisse admodum omittantur nihil corrumpit</span>
+      <div className={styles.textContainer}>
+        <span className={styles.header}>Editor's Pick</span><br />
+        <span className={styles.text}>Our picks, just for you nam an vidisse admodum omittantur nihil corrumpit</span>
       </div>
       <div className={styles.sliderContainer}>
-        <Button
-          className={styles.arrowButton}
-          shape="circle"
-          icon={<LeftOutlined className={styles.controlsArrow} />}
-          onClick={onPrevSlide}
-        />
-        <Button
-          className={styles.arrowButton}
-          shape="circle"
-          icon={<RightOutlined className={styles.controlsArrow} />}
-          onClick={onNextSlide}
-        />
-        <span className={styles.controlsIndicator}>{activeSlideIndex + 1}/{EDITOR_PICK_DATA.length}</span>
+        <div className={styles.sliderIndicators}>
+          <div className={styles.buttonsContainer}>
+            <Button
+              className={styles.arrowButton}
+              shape="circle"
+              icon={<LeftOutlined className={styles.controlsArrow} />}
+              onClick={onPrevSlide}
+            />
+            <Button
+              className={styles.arrowButton}
+              shape="circle"
+              icon={<RightOutlined className={styles.controlsArrow} />}
+              onClick={onNextSlide}
+            />
+          </div>
+          <span className={styles.controlsIndicator}>{activeSlideIndex + 1}/{EDITOR_PICK_DATA.length}</span>
+        </div>
         <Carousel ref={ref} dots={false} slidesToShow={5} slidesToScroll={5} afterChange={onChange}>
-          {EDITOR_PICK_DATA.map(subArray => subArray.map(({id, image, title, place, description}) => (
-            <div className={styles.slide} key={id}>
-              <Popover content={<div><span>{title}</span><span>{place}</span><span>{description}</span></div>} placement="bottom"
-              overlayClassName={styles.popover}>
-                <img className={styles.img} src={image} alt="tower"/>
-              </Popover>
-            </div>
-          )
-          ))}
+            {EDITOR_PICK_DATA.map(subArray => subArray.map(({id, image, title, place, description}) => (
+              <div className={styles.slide} key={id}>
+                <Popover content={<div><span>{title}</span><span>{place}</span><span>{description}</span></div>} placement="bottom"
+                overlayClassName={styles.popover}>
+                  <img className={styles.img} src={image} alt="tower"/>
+                </Popover>
+              </div>
+            )
+            ))}
         </Carousel>
       </div>
     </section>
