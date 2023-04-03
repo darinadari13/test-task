@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+.root {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-right: $contentRightPad;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.title {
+  font-size: 60px;
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.quote {
+  width: 60%;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid $yellowMainColor;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  background: $yellowMainColor;
+  margin-top: 20px;
+  width: 13%;
+}
+
+.img {
+  width: 600px;  
+  height: 600px;
+}

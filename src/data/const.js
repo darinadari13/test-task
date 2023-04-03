@@ -92,7 +92,15 @@ export const FEATURED_SPOTS_DATA = [
     link: 'Read more',
     image: 'https://picsum.photos/seed/mountain1/300',
   },
+];
+
+export const ABOVE_THE_SEA_DATA = [
+  {
+    id: 1,
+    title: 'Above The Sea',
+    quote: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    description: 'Sed id consequat orci, eu iaculis lorem. Donec convallis finibus quam, in congue lorem fringilla id. Praesent at urna id dolor ullamcorper hendrerit a imperdiet ex. Cras sit amet libero ultricies, accumsan quam id, feugiat orci. Ut vitae justo et sem interdum suscipit id sit amet nulla. Integer laoreet posuere tortor a venenatis. Suspendisse viverra metus justo, sit amet facilisis leo faucibus vitae. Nam aliquam lacus blandit risus feugiat malesuada. Vestibulum commodo risus dolor, in accumsan erat pellentesque congue. Donec posuere hendrerit tellus tincidunt eleifend. Fusce eget metus urna. Sed commodo turpis at sem lacinia iaculis. Praesent nibh ex, cursus a semper non, vehicula id nibh. Maecenas nec urna justo. Maecenas at turpis et neque iaculis porttitor eu at libero.',
+    link: 'Read more',
+    image: 'https://picsum.photos/seed/sea1/600',
+  }
 ]
-
-
-

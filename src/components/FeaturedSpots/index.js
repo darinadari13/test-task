@@ -4,7 +4,7 @@ import styles from "./index.module.scss"
 
 function FeaturedSpots() {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={styles.leftContainer}>
         <div className={styles.leftContainerText}>
           <h2>Featured Spots</h2>
@@ -14,7 +14,7 @@ function FeaturedSpots() {
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.spotsList}>
-          {FEATURED_SPOTS_DATA.map(({id, title, place, description, link, image, placeholder}) => (
+          {FEATURED_SPOTS_DATA.map(({id, title, place, description, link, image}) => (
             <div key={id} className={styles.spot}>
               <img className={styles.img} src={image} alt="spot"/>
               <h2 className={styles.title}>{title}</h2>
@@ -26,7 +26,7 @@ function FeaturedSpots() {
         </div>
         <div className={styles.outdoors}>Outdoors Edition</div>
       </div>
-    </div>
+    </section>
   )
 }
 
