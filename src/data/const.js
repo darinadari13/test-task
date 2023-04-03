@@ -96,7 +96,7 @@ export const FEATURED_SPOTS_DATA = [
 
 export const ABOVE_THE_SEA_DATA = [
   {
-    id: 1,
+    id: 0,
     title: 'Above The Sea',
     quote: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     description: 'Sed id consequat orci, eu iaculis lorem. Donec convallis finibus quam, in congue lorem fringilla id. Praesent at urna id dolor ullamcorper hendrerit a imperdiet ex. Cras sit amet libero ultricies, accumsan quam id, feugiat orci. Ut vitae justo et sem interdum suscipit id sit amet nulla. Integer laoreet posuere tortor a venenatis. Suspendisse viverra metus justo, sit amet facilisis leo faucibus vitae. Nam aliquam lacus blandit risus feugiat malesuada. Vestibulum commodo risus dolor, in accumsan erat pellentesque congue. Donec posuere hendrerit tellus tincidunt eleifend. Fusce eget metus urna. Sed commodo turpis at sem lacinia iaculis. Praesent nibh ex, cursus a semper non, vehicula id nibh. Maecenas nec urna justo. Maecenas at turpis et neque iaculis porttitor eu at libero.',
@@ -104,3 +104,119 @@ export const ABOVE_THE_SEA_DATA = [
     image: 'https://picsum.photos/seed/sea1/600',
   }
 ]
+
+export const EDITOR_PICK_DATA = [
+  [
+    {
+      id: 0,
+      image: 'https://picsum.photos/seed/tower/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 1,
+      image: 'https://picsum.photos/seed/tower1/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 2,
+      image: 'https://picsum.photos/seed/tower2/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 3,
+      image: 'https://picsum.photos/seed/tower3/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 4,
+      image: 'https://picsum.photos/seed/tower4/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    }
+  ],
+
+  [
+    {
+      id: 5,
+      image: 'https://picsum.photos/seed/tower5/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 6,
+      image: 'https://picsum.photos/seed/tower6/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 7,
+      image: 'https://picsum.photos/seed/tower7/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 8,
+      image: 'https://picsum.photos/seed/tower8/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 9,
+      image: 'https://picsum.photos/seed/tower9/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 10,
+      image: 'https://picsum.photos/seed/tower10/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+  ],
+
+  [
+    {
+      id: 11,
+      image: 'https://picsum.photos/seed/tower11/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 12,
+      image: 'https://picsum.photos/seed/tower12/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 13,
+      image: 'https://picsum.photos/seed/tower13/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+    {
+      id: 14,
+      image: 'https://picsum.photos/seed/tower14/300',
+      title: 'Flatiron',
+      place: 'USA',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus',
+    },
+  ]
+];
