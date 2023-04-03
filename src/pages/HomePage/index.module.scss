@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.centerFlex {
+  display: flex;
+  justify-content: center;
+  padding: 0 $contentRightPad 0 $contentRightPad;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+}

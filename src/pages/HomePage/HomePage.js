@@ -4,6 +4,7 @@ import AboveTheSea from "../../components/AboveTheSea";
 import EditorPick from "../../components/EditorPick";
 import MountainCollections from "../../components/MountainCollections";
 import SubscribeForm from "../../components/SubscribeForm";
+import styles from "./index.module.scss";
 
 function HomePage() {
   return (
@@ -13,6 +14,9 @@ function HomePage() {
       <AboveTheSea/>
       <EditorPick/>
       <MountainCollections/>
+      <div className={styles.centerFlex}>
+        <div className={styles.divider} />
+      </div>
       <SubscribeForm/>
     </div>
   )

@@ -16,7 +16,7 @@ function SubscribeForm() {
 
   return (
     <section className={styles.root}>
-      <span>Subscribe to our news letter</span>
+      <h3>Subscribe to our news letter</h3>
       <form className={styles.form} onSubmit={handleSubmit}>
         <label>
           <input className={styles.input} type="email" value={email} onChange={handleInputChange} placeholder="Your Email"/>

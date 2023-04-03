@@ -4,8 +4,10 @@ import styles from './index.module.scss';
 function Footer() {
   return (
     <footer>
-      <span>trpp_</span>
-      <span>© 2022-2023</span>
+      <div className={styles.logo}>
+        <h1>trppd_</h1>
+      </div>
+      <strong>© 2022-2023</strong>
       <div className={styles.container}>
         <span><InstagramOutlined /></span>
         <span><FacebookOutlined /></span>
