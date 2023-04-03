@@ -1,0 +1,47 @@
+@import "../../variables.scss";
+
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $mainTextColor;
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &::before {
+    content: '';
+    background-color: white;
+    opacity: .5;
+    height: 2px;
+    width: 80%;
+    margin-bottom: 80px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding: 50px;
+}
+
+.input {
+  border-radius: 30px;
+  padding: 10px 100px 10px 10px;
+  width: 80%;
+  border: transparent;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid $yellowMainColor;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  background: $yellowMainColor;
+  cursor: pointer;
+}

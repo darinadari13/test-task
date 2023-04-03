@@ -4,6 +4,10 @@
   padding-left: $slideContentLeftPadding;
   padding-top: 100px;
   color: $mainTextColor;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), $mainBackgroundColor), 
+  linear-gradient(to top, rgba(255, 255, 255, 0), $mainBackgroundColor),
+  url("https://picsum.photos/seed/mountain/2000");
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -34,7 +38,6 @@
     content: '';
     background-color: white;
     opacity: .5;
-    margin-left: 10px;
     height: 2px;
     width: 100%;
   }
