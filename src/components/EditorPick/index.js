@@ -26,8 +26,8 @@ function EditorPick() {
 
   const renderGridSlide = (items, index) => {
     return (
-      <div>
-        <div key={index} className={styles.gridSlide}>
+      <div key={index}>
+        <div className={styles.gridSlide}>
           <div className={styles.gridSlideImage1} style={{ backgroundImage: `url(${items[0].image})`}} />
           <div className={styles.gridSlideImage2} style={{ backgroundImage: `url(${items[1].image})`}} />
           <div className={styles.gridSlideImage3} style={{ backgroundImage: `url(${items[2].image})`}} />
