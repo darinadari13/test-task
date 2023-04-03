@@ -1,5 +1,5 @@
 import { EDITOR_PICK_DATA } from '../../data/const';
-import { Carousel, Button, Popover } from 'antd';
+import { Carousel, Button } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import React, { useState, useRef } from "react";
 import styles from './index.module.scss';
@@ -7,9 +7,6 @@ import styles from './index.module.scss';
 function EditorPick() {
   const ref = useRef(null);
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-
-  
-  // const activeSlide = EDITOR_PICK_DATA[activeSlideIndex];
 
   const onChange = (currentSlideIndex) => {
     setActiveSlideIndex(currentSlideIndex)
