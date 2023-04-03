@@ -220,3 +220,30 @@ export const EDITOR_PICK_DATA = [
     },
   ]
 ];
+
+export const MOUNTAIN_COLLECTIONS_DATA = [
+  {
+    id: 0,
+    title: 'Southern Mountain',
+    place: 'South Country',
+    description: 'Sed id consequat orci, eu iaculis lorem. Donec convallis finibus quam, in congue lorem fringilla id. Praesent at urna id dolor ullamcorper hendrerit a imperdiet ex. Cras sit amet libero ultricies, accumsan quam id, feugiat orci. Ut vitae justo et sem interdum suscipit id sit amet nulla. Integer laoreet posuere tortor a venenatis. Suspendisse viverra metus justo, sit amet facilisis leo faucibus vitae. Nam aliquam lacus blandit risus feugiat malesuada. Vestibulum commodo risus dolor, in accumsan erat pellentesque congue. Donec posuere hendrerit tellus tincidunt eleifend. Fusce eget metus urna. Sed commodo turpis at sem lacinia iaculis.',
+    link: 'Read More',
+    image: 'https://picsum.photos/seed/mountain/200'
+  },
+  {
+    id: 1,
+    title: 'Northern Mountain',
+    place: 'North Country',
+    description: 'Sed id consequat orci, eu iaculis lorem. Donec convallis finibus quam, in congue lorem fringilla id. Praesent at urna id dolor ullamcorper hendrerit a imperdiet ex. Cras sit amet libero ultricies, accumsan quam id, feugiat orci. Ut vitae justo et sem interdum suscipit id sit amet nulla. Integer laoreet posuere tortor a venenatis. Suspendisse viverra metus justo, sit amet facilisis leo faucibus vitae. Nam aliquam lacus blandit risus feugiat malesuada. Vestibulum commodo risus dolor, in accumsan erat pellentesque congue. Donec posuere hendrerit tellus tincidunt eleifend. Fusce eget metus urna. Sed commodo turpis at sem lacinia iaculis.',
+    link: 'Read More',
+    image: 'https://picsum.photos/seed/mountain1/200'
+  },
+  {
+    id: 2,
+    title: 'Eastern Mountain',
+    place: 'East Country',
+    description: 'Sed id consequat orci, eu iaculis lorem. Donec convallis finibus quam, in congue lorem fringilla id. Praesent at urna id dolor ullamcorper hendrerit a imperdiet ex. Cras sit amet libero ultricies, accumsan quam id, feugiat orci. Ut vitae justo et sem interdum suscipit id sit amet nulla. Integer laoreet posuere tortor a venenatis. Suspendisse viverra metus justo, sit amet facilisis leo faucibus vitae. Nam aliquam lacus blandit risus feugiat malesuada. Vestibulum commodo risus dolor, in accumsan erat pellentesque congue. Donec posuere hendrerit tellus tincidunt eleifend. Fusce eget metus urna. Sed commodo turpis at sem lacinia iaculis.',
+    link: 'Read More',
+    image: 'https://picsum.photos/seed/mountain2/200'
+  },
+]

@@ -2,6 +2,7 @@ import HomeSlider from "../../components/HomeSlider";
 import FeaturedSpots from "../../components/FeaturedSpots";
 import AboveTheSea from "../../components/AboveTheSea";
 import EditorPick from "../../components/EditorPick";
+import MountainCollections from "../../components/MountainCollections";
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <FeaturedSpots/>
       <AboveTheSea/>
       <EditorPick/>
+      <MountainCollections/>
     </div>
   )
 }

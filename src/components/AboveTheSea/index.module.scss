@@ -20,7 +20,7 @@
 }
 
 .title {
-  font-size: 60px;
+  font-size: $titleFontSize;
   width: 40%;
   margin-top: 0;
   margin-bottom: 20px;
@@ -50,6 +50,7 @@
   margin-top: 20px;
   width: 13%;
 }
+
 
 .img {
   width: 600px;  
