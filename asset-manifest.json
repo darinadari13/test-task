@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/test-task/static/css/main.03aebbe9.css",
+    "main.js": "/test-task/static/js/main.67f0ae53.js",
+    "static/media/dotted-map.png": "/test-task/static/media/dotted-map.840f4e6e188504c03084.png",
+    "index.html": "/test-task/index.html",
+    "main.03aebbe9.css.map": "/test-task/static/css/main.03aebbe9.css.map",
+    "main.67f0ae53.js.map": "/test-task/static/js/main.67f0ae53.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03aebbe9.css",
+    "static/js/main.67f0ae53.js"
+  ]
+}
