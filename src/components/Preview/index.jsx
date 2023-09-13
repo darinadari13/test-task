@@ -16,9 +16,6 @@ export function Preview() {
     <div className="flex flex-col gap-y-4 text-center w-2/4 overflow-y-auto p-6 pb-20">
       {page.map(element => {
         const Component = ELEMENTS[element.type]
-
-        console.log(element);
-
         return <Component key={element.id} data={element.data} />
       })}
     </div>

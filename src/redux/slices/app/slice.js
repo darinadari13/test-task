@@ -3,6 +3,7 @@ import { HEADLINE_TYPE, PARAGRAPH_TYPE, BUTTON_TYPE, IMAGE_TYPE, DEFAULT_HEADLIN
 import { generateUniqueId } from '../../../utils/generateUniqueId';
 
 const initialState = {
+  selectedElementId: null,
   page: [
     { id: generateUniqueId(), type: HEADLINE_TYPE, data: DEFAULT_HEADLINE_DATA },
     { id: generateUniqueId(), type: PARAGRAPH_TYPE, data: DEFAULT_PARAGRAPH_DATA },
@@ -18,13 +19,20 @@ const appSlice = createSlice({
     addElement(state, action) {
       const { index, item } = action.payload
       state.page.splice(index, 0, item);
+    },
+    selectElement(state, action) {
+      state.selectedElementId = action.payload
+    },
+    updateElementData(state, action) {
+      const { index, data } = action.payload
+      state.page[index].data = data
     }
   },
 });
 
 const appReducer = appSlice.reducer
 
-export const { addElement } = appSlice.actions
+export const { addElement, selectElement, updateElementData } = appSlice.actions
 
 
 export default appReducer;
