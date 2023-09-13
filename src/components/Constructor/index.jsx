@@ -15,7 +15,7 @@ export function Constructor() {
             {...provider.droppableProps}
           >
             {page.map((element, index) => (
-              <Draggable key={element.id} draggableId={element.id} index={index}>
+              <Draggable key={element.id} draggableId={element.id} index={index} isDragDisabled>
                 {
                   provider => (
                     <div ref={provider.innerRef} {...provider.draggableProps} {...provider.dragHandleProps}>
