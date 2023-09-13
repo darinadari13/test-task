@@ -7,11 +7,18 @@ export const PARAGRAPH_TYPE = 'p';
 export const BUTTON_TYPE = 'button';
 export const IMAGE_TYPE = 'img';
 
+export const ELEMENT_ICON_BY_TYPE = {
+  [HEADLINE_TYPE]: HeadlineIcon,
+  [PARAGRAPH_TYPE]: ParagraphIcon,
+  [BUTTON_TYPE]: ImageButtonIcon,
+  [IMAGE_TYPE]: ImageButtonIcon,
+}
+
 export const TOOLS_LIST = [
-  { name: 'Headline', IconComponent: HeadlineIcon, type: HEADLINE_TYPE },
-  { name: 'Image', IconComponent: ImageButtonIcon, type: IMAGE_TYPE },
-  { name: 'Paragraph', IconComponent: ParagraphIcon, type: PARAGRAPH_TYPE },
-  { name: 'Button', IconComponent: ImageButtonIcon, type: BUTTON_TYPE }
+  { name: 'Headline', IconComponent: ELEMENT_ICON_BY_TYPE[HEADLINE_TYPE], type: HEADLINE_TYPE },
+  { name: 'Image', IconComponent: ELEMENT_ICON_BY_TYPE[IMAGE_TYPE], type: IMAGE_TYPE },
+  { name: 'Paragraph', IconComponent: ELEMENT_ICON_BY_TYPE[PARAGRAPH_TYPE], type: PARAGRAPH_TYPE },
+  { name: 'Button', IconComponent: ELEMENT_ICON_BY_TYPE[BUTTON_TYPE], type: BUTTON_TYPE }
 ]
 
 export const DEFAULT_HEADLINE_DATA = 'A legendary cap set that feels like new';

@@ -1,6 +1,6 @@
 export function Preview() {
   return (
-    <div>
+    <div className="w-2/4">
       Preview
     </div>
   )

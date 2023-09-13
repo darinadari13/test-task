@@ -12,7 +12,7 @@ function App() {
         <div className="p-5 w-1/4 border-r">
           <Sidebar />
         </div>
-        <div className="p-5 w-3/4">
+        <div className="flex w-3/4">
           <Content>
             <Constructor />
             <Preview />
