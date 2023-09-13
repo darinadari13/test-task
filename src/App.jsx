@@ -7,6 +7,7 @@ import { DragDropContext } from 'react-beautiful-dnd';
 import { useDispatch } from "react-redux";
 import { addElement } from "./redux/slices/app/slice";
 import { generateUniqueId } from "./utils/generateUniqueId";
+import { DEFAUL_DATA_BY_TYPE } from "./constants";
 
 function App() {
   const dispatch = useDispatch()
@@ -15,6 +16,7 @@ function App() {
     const newItem = {
       id: generateUniqueId(),
       type: result.draggableId,
+      data: DEFAUL_DATA_BY_TYPE[result.draggableId]
     }
 
     dispatch(addElement({ index: result.destination.index, item: newItem }))
