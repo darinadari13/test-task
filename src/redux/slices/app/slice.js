@@ -11,13 +11,20 @@ const initialState = {
   ],
 };
 
-const app = createSlice({
+const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
+    addElement(state, action) {
+      const { index, item } = action.payload
+      state.page.splice(index, 0, item);
+    }
   },
 });
 
-const appReducer = app.reducer
+const appReducer = appSlice.reducer
+
+export const { addElement } = appSlice.actions
+
 
 export default appReducer;

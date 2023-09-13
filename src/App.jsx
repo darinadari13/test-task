@@ -4,10 +4,20 @@ import { Preview } from "./components/Preview";
 import { Constructor } from "./components/Constructor";
 import { Header } from "./components/Header";
 import { DragDropContext } from 'react-beautiful-dnd';
+import { useDispatch } from "react-redux";
+import { addElement } from "./redux/slices/app/slice";
+import { generateUniqueId } from "./utils/generateUniqueId";
 
 function App() {
+  const dispatch = useDispatch()
+
   const handleDragEnd = (result) => {
-    console.log(result);
+    const newItem = {
+      id: generateUniqueId(),
+      type: result.draggableId,
+    }
+
+    dispatch(addElement({ index: result.destination.index, item: newItem }))
   }
   return (
     <div className="min-h-screen bg-slate-100">
