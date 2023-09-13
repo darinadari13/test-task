@@ -5,7 +5,7 @@ import { Constructor } from "./components/Constructor";
 import { Header } from "./components/Header";
 import { DragDropContext } from 'react-beautiful-dnd';
 import { useDispatch } from "react-redux";
-import { addElement } from "./redux/slices/app/slice";
+import { addElementToIndex } from "./redux/slices/app/slice";
 import { generateUniqueId } from "./utils/generateUniqueId";
 import { DEFAUL_DATA_BY_TYPE } from "./constants";
 
@@ -19,7 +19,7 @@ function App() {
       data: DEFAUL_DATA_BY_TYPE[result.draggableId]
     }
 
-    dispatch(addElement({ index: result.destination.index, item: newItem }))
+    dispatch(addElementToIndex({ index: result.destination.index, item: newItem }))
   }
   return (
     <div className="min-h-screen bg-slate-100">

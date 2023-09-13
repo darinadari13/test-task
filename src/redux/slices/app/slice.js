@@ -16,9 +16,13 @@ const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-    addElement(state, action) {
+    addElementToIndex(state, action) {
       const { index, item } = action.payload
       state.page.splice(index, 0, item);
+    },
+    addElementToEnd(state, action) {
+      const { item } = action.payload
+      state.page.push(item)
     },
     selectElement(state, action) {
       state.selectedElementId = action.payload
@@ -32,7 +36,7 @@ const appSlice = createSlice({
 
 const appReducer = appSlice.reducer
 
-export const { addElement, selectElement, updateElementData } = appSlice.actions
+export const { addElementToIndex, addElementToEnd, selectElement, updateElementData } = appSlice.actions
 
 
 export default appReducer;
