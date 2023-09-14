@@ -5,7 +5,7 @@ import { ReactComponent as ImageButtonIcon } from '../../assets/icons/imageButto
 
 const INPUT_CLASS = "w-full font-roboto text-xs rounded-sm border p-5"
 
-export function ConstructorElement({ index, element, isSelected, onClick, onChange }) {
+export function ConstructorElement({ index, element, isSelected, isLast, onClick, onChange, onMoveTop, onMoveBottom }) {
   const IconComponent = ELEMENT_ICON_BY_TYPE[element.type]
   const elementName = ELEMENT_NAME_BY_TYPE[element.type]
 
@@ -16,6 +16,14 @@ export function ConstructorElement({ index, element, isSelected, onClick, onChan
   const handleChange = useCallback((e) => {
     onChange(index, e.target.value)
   }, [index, onChange])
+
+  const handleMoveTop = useCallback(() => {
+    onMoveTop(index)
+  }, [index, onMoveTop])
+
+  const handleMoveBottom = useCallback(() => {
+    onMoveBottom(index)
+  }, [index, onMoveBottom])
 
   return (
     <div className={cn('flex', 'flex-col', 'items-center', 'rounded-lg', 'p-4','cursor-pointer', 'relative', {
@@ -32,8 +40,8 @@ export function ConstructorElement({ index, element, isSelected, onClick, onChan
       }
       <div className="absolute -top-6 right-2 flex">
         <div className="flex rounded-t bg-blue-200 mr-5">
-          <button><ImageButtonIcon /></button>
-          <button><ImageButtonIcon /></button>
+          <button disabled={index === 0} onClick={handleMoveTop}><ImageButtonIcon /></button>
+          <button disabled={isLast} onClick={handleMoveBottom}><ImageButtonIcon /></button>
         </div>
         <div className="flex rounded-t bg-blue-300">
           <button><ImageButtonIcon /></button>
