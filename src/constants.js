@@ -2,6 +2,7 @@ import { ReactComponent as HeadlineIcon } from './assets/icons/headline.svg';
 import { ReactComponent as ImageButtonIcon } from './assets/icons/imageButton.svg';
 import { ReactComponent as ParagraphIcon } from './assets/icons/paragraph.svg';
 
+
 export const HEADLINE_TYPE = 'h1';
 export const PARAGRAPH_TYPE = 'p';
 export const BUTTON_TYPE = 'button';

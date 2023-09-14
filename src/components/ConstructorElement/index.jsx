@@ -1,7 +1,10 @@
 import { useCallback } from "react"
 import { ELEMENT_ICON_BY_TYPE, ELEMENT_NAME_BY_TYPE } from "../../constants"
 import cn from 'classnames'
-import { ReactComponent as ImageButtonIcon } from '../../assets/icons/imageButton.svg';
+import { ReactComponent as DeleteButtonIcon } from '../../assets/icons/actionDelete.svg';
+import { ReactComponent as CopyButtonIcon } from '../../assets/icons/actionCopy.svg';
+import { ReactComponent as TopButtonIcon } from '../../assets/icons/actionTop.svg';
+import { ReactComponent as DownButtonIcon } from '../../assets/icons/actionDown.svg';
 
 const INPUT_CLASS = "w-full font-roboto text-xs rounded-sm border p-5"
 
@@ -52,19 +55,22 @@ export function ConstructorElement({
       <IconComponent className="mb-2.5"/>
       <span className="font-roboto text-xs mb-5">{elementName}</span>
 
+      {/* Input zone / can be moved to separate component */}
       { isSelected &&
         <div className="w-full p-5 bg-white flex rounded-sm border-custom-light-grey">
           <input type="text" className={INPUT_CLASS} defaultValue={element.data} onChange={handleChange} />
         </div>
       }
-      { isSelected && <div className="absolute -top-6 right-2 flex">
-        <div className="flex rounded-t bg-blue-200 mr-5">
-          <button disabled={index === 0} onClick={handleMoveTop}><ImageButtonIcon /></button>
-          <button disabled={isLast} onClick={handleMoveBottom}><ImageButtonIcon /></button>
+
+      {/* Toolbar zone / can be moved to separate component */}
+      { isSelected && <div className="absolute top-[-19px] right-2 flex">
+        <div className="flex gap-1 rounded-t bg-blue-200 mr-5 p-0.5">
+          <button className="hover:opacity-50 disabled:cursor-not-allowed" disabled={index === 0} onClick={handleMoveTop}><TopButtonIcon /></button>
+          <button className="hover:opacity-50 disabled:cursor-not-allowed" disabled={isLast} onClick={handleMoveBottom}><DownButtonIcon /></button>
         </div>
-        <div className="flex rounded-t bg-blue-300">
-          <button onClick={handleCloneElement}><ImageButtonIcon /></button>
-          <button onClick={handleDeleteElement}><ImageButtonIcon /></button>
+        <div className="flex gap-1 rounded-t bg-blue-300 p-0.5">
+          <button className="hover:opacity-50" onClick={handleCloneElement}><CopyButtonIcon /></button>
+          <button className="hover:opacity-50" onClick={handleDeleteElement}><DeleteButtonIcon /></button>
         </div>
       </div>}
     </div>
