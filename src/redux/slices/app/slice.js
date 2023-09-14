@@ -40,6 +40,13 @@ const appSlice = createSlice({
     deleteElement(state, action) {
       const elementIndex = action.payload
       state.page.splice(elementIndex, 1)
+    },
+    cloneElement(state, action) {
+      const elementIndex = action.payload
+      const element = state.page[elementIndex]
+      const newElement = { ...element, id: generateUniqueId() }
+
+      state.page.splice(elementIndex + 1, 0, newElement)
     }
   },
 });
@@ -53,7 +60,8 @@ export const {
   updateElementData,
   moveElementTop,
   moveElementBottom,
-  deleteElement
+  deleteElement,
+  cloneElement
 } = appSlice.actions
 
 
