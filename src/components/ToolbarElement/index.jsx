@@ -19,8 +19,8 @@ export function ToolbarElement({ type, IconComponent, name }) {
 
   return (
     <div className="flex flex-col items-center rounded-lg bg-slate-200 py-6" onClick={handleAddNewItem}>
-      <IconComponent />
-      <span>{name}</span>
+      <IconComponent className="mb-2.5"/>
+      <span className="font-roboto text-xs">{name}</span>
     </div>
   )
 }

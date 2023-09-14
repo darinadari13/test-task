@@ -24,7 +24,7 @@ export function Constructor() {
       {
         provider => (
           <div
-            className="flex flex-col gap-y-4 bg-slate-200 w-2/4 p-5 pb-20 overflow-y-auto" ref={provider.innerRef}
+            className="flex flex-col gap-y-4 bg-slate-200 w-2/4 p-25 pb-20 overflow-y-auto" ref={provider.innerRef}
             {...provider.droppableProps}
           >
             {page.map((element, index) => (

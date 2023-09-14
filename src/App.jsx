@@ -26,7 +26,7 @@ function App() {
       <Header />
       <DragDropContext onDragEnd={handleDragEnd}>
         <main className="flex h-screen">
-          <div className="p-5 w-1/4 border-r">
+          <div className="p-25 w-1/4 border-r">
             <Sidebar />
           </div>
           <div className="flex w-3/4">

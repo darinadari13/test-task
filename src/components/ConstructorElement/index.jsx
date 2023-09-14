@@ -1,11 +1,12 @@
 import { useCallback } from "react"
-import { ELEMENT_ICON_BY_TYPE } from "../../constants"
+import { ELEMENT_ICON_BY_TYPE, ELEMENT_NAME_BY_TYPE } from "../../constants"
 import cn from 'classnames'
 
-const INPUT_CLASS = "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+const INPUT_CLASS = "bg-white border rounded-sm w-custom border-4 border-solid border-transparent box-shadow-inset mt-2.5 p-5 shadow-custom font-roboto text-xs"
 
 export function ConstructorElement({ index, element, isSelected, onClick, onChange }) {
   const IconComponent = ELEMENT_ICON_BY_TYPE[element.type]
+  const elementName = ELEMENT_NAME_BY_TYPE[element.type]
 
   const handleClick = useCallback(() => {
     onClick(element.id)
@@ -16,11 +17,12 @@ export function ConstructorElement({ index, element, isSelected, onClick, onChan
   }, [index, onChange])
 
   return (
-    <div className={cn('flex', 'flex-col', 'items-center', 'bg-slate-100', 'rounded-lg', 'py-4', {
-      'bg-blue-200': isSelected,
+    <div className={cn('flex', 'flex-col', 'items-center', 'rounded-lg', 'py-4', {
+      'bg-slate-100': !isSelected,
+      'bg-custom-grey': isSelected,
     })} onClick={handleClick}>
-      <IconComponent />
-      {element.type}
+      <IconComponent  className="mb-2.5"/>
+      <span className="font-roboto text-xs">{elementName}</span>
       {isSelected && <input type="text" className={INPUT_CLASS} defaultValue={element.data} onChange={handleChange} />}
     </div>
   )
