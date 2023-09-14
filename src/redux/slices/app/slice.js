@@ -36,13 +36,25 @@ const appSlice = createSlice({
     },
     moveElementBottom(state, action) {
       [state.page[action.payload], state.page[action.payload + 1]] = [state.page[action.payload + 1], state.page[action.payload]];
+    },
+    deleteElement(state, action) {
+      const elementIndex = action.payload
+      state.page.splice(elementIndex, 1)
     }
   },
 });
 
 const appReducer = appSlice.reducer
 
-export const { addElementToIndex, addElementToEnd, selectElement, updateElementData, moveElementTop, moveElementBottom } = appSlice.actions
+export const {
+  addElementToIndex,
+  addElementToEnd,
+  selectElement,
+  updateElementData,
+  moveElementTop,
+  moveElementBottom,
+  deleteElement
+} = appSlice.actions
 
 
 export default appReducer;

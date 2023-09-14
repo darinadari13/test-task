@@ -4,7 +4,7 @@ import { ConstructorElement } from "../ConstructorElement";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 import { useCallback } from "react";
 import { useDispatch } from "react-redux";
-import { moveElementBottom, moveElementTop, selectElement, updateElementData } from "../../redux/slices/app/slice";
+import { deleteElement, moveElementBottom, moveElementTop, selectElement, updateElementData } from "../../redux/slices/app/slice";
 
 export function Constructor() {
   const dispatch = useDispatch()
@@ -25,6 +25,10 @@ export function Constructor() {
 
   const handleElementMoveBottom = useCallback((index) => {
     dispatch(moveElementBottom(index))
+  }, [])
+
+  const handleDeleteElement = useCallback((index) => {
+    dispatch(deleteElement(index))
   }, [])
 
   return (
@@ -50,6 +54,7 @@ export function Constructor() {
                         onChange={handleElementDataChange}
                         onMoveTop={handleElementMoveTop}
                         onMoveBottom={handleElementMoveBottom}
+                        onDelete={handleDeleteElement}
                       />
                     </div>
                   )
